@@ -9,15 +9,19 @@
 
 #Task2
 
-a = '11234556789'
+a = '0937754998'
 len(a)
-print("Your phone number : ", a)
+print("Your phone number: ",a)
 
 if len(a) == 10 and a.isdigit:
-    print("Is phone number")
-else: len(a) < 10
-print('Its not a phone number')
-
+    print("Is legit phone number")
+elif len(a) < 10:
+    print('Its not a legit phone number')
+elif a.isalpha:
+    print('It,s a letters, write number, please')
 
 #Task3
 #Task4
+my_name = 'yaroslav'
+input(my_name)
+print(my_name)
