@@ -10,7 +10,7 @@
 #Task2
 
 a = '0937754998'
-len(a)
+len(a) - 0
 print("Your phone number: ",a)
 
 while len(a) == 10 and a.isdigit:
