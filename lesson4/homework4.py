@@ -9,16 +9,20 @@
 
 #Task2
 
-a = '0937ds754998'
-len(a) - 0
-print("Your phone number: ",a)
+#a = input("Write your phone number: ")
+#len(a) - 0
+#print("Your phone number: ",a)
 
-while len(a) == 10 and a.isdigit:
-    print("Is legit phone number")
-    break
-if len(a) < 10 or a.isalpha or len(a) > 11 :
-    print('Its not a legit phone number')
-
-
+#if len(a) == 10 and a.isdigit:
+#    print("Is legit phone number")
+    #elif len(a) < 10 or a.isalpha or len(a) > 11 :
+#    print('Its not a legit phone number')
 
 #Task3
+
+
+#Task4
+my_name = input("Write your name: ")
+print(my_name.upper())
+
+#print(my_name.upper())
