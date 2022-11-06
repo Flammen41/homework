@@ -19,10 +19,10 @@
 #    print('Its not a legit phone number')
 
 #Task3
-
-
-#Task4
-my_name = input("Write your name: ")
-print(my_name.upper())
-
-#print(my_name.upper())
+#
+#
+# #Task4
+# my_name = input("Write your name: ")
+# print(my_name.upper())
+#
+# #print(my_name.upper())
