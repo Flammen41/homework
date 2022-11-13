@@ -1,27 +1,41 @@
 Task 1
 
-The greatest number
-
-Write a Python program to get the largest number from a list of random numbers with the length of 10
-
-Constraints: use only while loop and random module to generate numbers
+Make a program that has some sentence (a string) on input and returns a dict containing all unique words as keys and the number of occurrences as values.
 
 
 
 Task 2
 
-Exclusive common numbers.
+Input data:
 
-Generate 2 lists with the length of 10 with random integers from 1 to 10, and make a third list containing the common integers between the 2 initial lists without any duplicates.
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
 
-Constraints: use only while loop and random module to generate numbers
+Compute the total price of the stock where the total price is the sum of the price of an item multiplied by the quantity of this exact item.
+
 
 
 
 Task 3
 
-Extracting numbers.
+List comprehension exercise
 
-Make a list that contains all integers from 1 to 100, then find all integers from the list that are divisible by 7 but not a multiple of 5, and store them in a separate list. Finally, print the list.
+Use a list comprehension to make a list containing tuples (i, j) where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
 
-Constraint: use only while loop for iteration
+
+
+Task 4
+
+Створити лист із днями тижня.
+В один рядок (ну або як завжди) створити словник виду: {1: “Monday”, 2:...
+Також в один рядок або як вдасться створити зворотний словник {“Monday”: 1,

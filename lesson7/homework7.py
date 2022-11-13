@@ -1,3 +1,4 @@
+import random
 #Task1
 
 # message = "On a summer day somner smith went simming in the sun and his red skin stung"
@@ -27,10 +28,12 @@
 # print(total_price)
 ###################################################################################
 #Task3
+i_list = [i**2 for i in range(10)]
+# for x in range(10):
+#     i_list.append(x**2)
+print(i_list)
 
-
-
-
-#Task4
-days_of_week = (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
-dict = {"days_of_week"}
+#
+# #Task4
+# days_of_week = (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
+# dict = {"days_of_week"}
