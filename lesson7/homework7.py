@@ -1,11 +1,23 @@
 import random
 #Task1
-
+#
 # message = "On a summer day somner smith went simming in the sun and his red skin stung"
 # values=['Number', '']
 # list = message.split()
 # mydict = dict(zip(range(len(message))))
-# print(dict)
+# print(mydict)
+def Count(message):
+    my_Dict = {}
+    mySentence = message.lower().split()
+    for word in mySentence:
+        if word in my_Dict:
+            my_Dict[word] += 1
+        else:
+            my_Dict[word] = 1
+    return my_Dict
+d = Count("On a summer day somner smith went simming in the sun and his red skin stung skin")
+print(d)
+
 ############################################################3
 #task2
 
