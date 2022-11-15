@@ -9,20 +9,26 @@
 
 #Task2
 
-#a = input("Write your phone number: ")
-#len(a) - 0
-#print("Your phone number: ",a)
+a = input("Write your phone number: ")
+len(a) - 0
+print("Your phone number: ",a)
 
-#if len(a) == 10 and a.isdigit:
-#    print("Is legit phone number")
-    #elif len(a) < 10 or a.isalpha or len(a) > 11 :
-#    print('Its not a legit phone number')
+if len(a) == 10 and a.isdigit():
+    print("Is legit phone number")
+elif len(a) < 10 or a.isalpha() or len(a) >= 11 :
+    print('Its not a legit phone number')
 
 #Task3
-#
-#
+# a = input("Write your mathematical expression: ")
+# if a == '+':
+#     print("Correct")
+# else:
+#     print("Wrong")
+
 # #Task4
-# my_name = input("Write your name: ")
-# print(my_name.upper())
-#
-# #print(my_name.upper())
+# name_input = input("Write your name: ")
+# my_name = "yaroslav"
+# if name_input.lower() == my_name:
+#     print("True")
+# else:
+#     print("Wrong")
