@@ -11,15 +11,15 @@ import kwargs as kwargs
 
 # ################################################################
 #Task2
-def make_country(country, capital, **country_info):
- dict = {}
- dict["country"] = country
- dict["capital"] = capital
- for key, values in country_info.items():
-  dict[key] = values
- return dict
-info = make_country('USA', 'Washington')
-print(info)
+# def make_country(country, capital, **country_info):
+#  dict = {}
+#  dict["country"] = country
+#  dict["capital"] = capital
+#  for key, values in country_info.items():
+#   dict[key] = values
+#  return dict
+# info = make_country('USA', 'Washington')
+# print(info)
 
 ###############################
 #Task3
@@ -34,3 +34,31 @@ print(info)
 # def custom_summer(a,b,c):
 #  return a+b+c
 # print(custom_summer(1,2,8))
+def make_operation(operation, nums_list):
+result = 0
+for num in nums_list:
+if operation == '+':
+result = result + int(num)
+if operation == '-':
+result = result - int(num)
+if operation == '*':
+result = result * int(num)
+return result
+
+
+def make_operation(operation, nums):
+summary = 0
+if operation == '+':
+ for i in nums:
+  result = result + i
+return (result)
+
+if operation == '-':
+ for i in nums:
+  result = result - i
+ return (result)
+
+if operation == '*':
+ for i in nums:
+  result = result * i
+ return (result)
