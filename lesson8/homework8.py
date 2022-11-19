@@ -1,5 +1,6 @@
+import numbers
 from unittest import result
-
+import operator
 import kwargs as kwargs
 
 ################################################################
@@ -23,42 +24,10 @@ import kwargs as kwargs
 
 ###############################
 #Task3
-# #
-# def make_operation('+'):
-#  return_value = 0
-#  for num in args:
-#   return_value += num**2
-#  return return_value
-
-# print(make_operation((7,11,4)))
-# def custom_summer(a,b,c):
-#  return a+b+c
-# print(custom_summer(1,2,8))
-def make_operation(operation, nums_list):
-result = 0
-for num in nums_list:
-if operation == '+':
-result = result + int(num)
-if operation == '-':
-result = result - int(num)
-if operation == '*':
-result = result * int(num)
-return result
-
-
-def make_operation(operation, nums):
-summary = 0
-if operation == '+':
- for i in nums:
-  result = result + i
-return (result)
-
-if operation == '-':
- for i in nums:
-  result = result - i
- return (result)
-
-if operation == '*':
- for i in nums:
-  result = result * i
- return (result)
+def make_operation(operator, numbers_list):
+    total=0
+    if operator == '+':
+        for num in numbers_list:
+            total+=num
+    print (total)
+make_operation('+', (6,8,9))

@@ -14,7 +14,8 @@ def math_square_division(a, b):
   num_a = int(input("Input numerator "))
   num_b = int(input("Input denominator"))
   blaba = num_a ** 2 / num_b
-except TypeError: 
+  return blaba
+except TypeError:
 print("Invalid input or exception")
-return blaba
+
 print("Results of a squared divided by b", math_square_division(a, b))
