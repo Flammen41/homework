@@ -1,4 +1,5 @@
 import numbers
+from random import sample
 from unittest import result
 import operator
 import kwargs as kwargs
@@ -24,10 +25,10 @@ import kwargs as kwargs
 
 ###############################
 #Task3
-def make_operation(operator, numbers_list):
-    total=0
-    if operator == '+':
-        for num in numbers_list:
-            total+=num
-    print (total)
-make_operation('+', (6,8,9))
+# def make_operation(operator, numbers_list):
+#     total=0
+#     if operator == '+':
+#         for num in numbers_list:
+#             total+=num
+#     print (total)
+# make_operation('+', (6,8,9))
