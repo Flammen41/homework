@@ -24,44 +24,97 @@
 #########
 #Task3
 
+# class TVController:
+#     def __init__(self):
+#         self.channels = ["BBC", "CNN", "ESPN", "FOX"]
+#         self.current_channel = 0
+#
+#     def first_channel(self):
+#         self.current_channel = 0
+#
+#     def last_channel(self):
+#         self.current_channel = len(self.channels) - 1
+#
+#     def turn_channel(self, N):
+#         if N > 0 and N <= len(self.channels):
+#             self.current_channel = N - 1
+#
+#     def next_channel(self):
+#         if self.current_channel == len(self.channels) - 1:
+#             self.current_channel = 0
+#         else:
+#             self.current_channel += 1
+#
+#     def previous_channel(self):
+#         if self.current_channel == 0:
+#             self.current_channel = len(self.channels) - 1
+#         else:
+#             self.current_channel -= 1
+#
+#     def current_channel(self):
+#         return self.channels[self.current_channel]
+#
+#     def is_exist(self, N_or_name):
+#         if type(N_or_name) == int:
+#             if N_or_name > 0 and N_or_name <= len(self.channels):
+#                 return "Yes"
+#             else:
+#                 return "No"
+#         elif type(N_or_name) == str:
+#             if N_or_name in self.channels:
+#                 return "Yes"
+#             else:
+#                 return "No"
+
+CHANNELS = ["BBC", "Discovery", "TV1000"]
+
 class TVController:
-    def __init__(self):
-        self.channels = ["BBC", "CNN", "ESPN", "FOX"]
+    def __init__(self, channels):
+        self.channels = channels
         self.current_channel = 0
 
     def first_channel(self):
         self.current_channel = 0
+        return self.channels[self.current_channel]
 
     def last_channel(self):
         self.current_channel = len(self.channels) - 1
+        return self.channels[self.current_channel]
 
-    def turn_channel(self, N):
-        if N > 0 and N <= len(self.channels):
-            self.current_channel = N - 1
+    def turn_channel(self, n):
+        if n > len(self.channels) or n < 1:
+            return "No"
+        else:
+            self.current_channel = n - 1
+            return self.channels[self.current_channel]
 
     def next_channel(self):
         if self.current_channel == len(self.channels) - 1:
             self.current_channel = 0
+            return self.channels[self.current_channel]
         else:
             self.current_channel += 1
+            return self.channels[self.current_channel]
 
     def previous_channel(self):
         if self.current_channel == 0:
             self.current_channel = len(self.channels) - 1
+            return self.channels[self.current_channel]
         else:
             self.current_channel -= 1
+            return self.channels[self.current_channel]
 
     def current_channel(self):
         return self.channels[self.current_channel]
 
-    def is_exist(self, N_or_name):
-        if type(N_or_name) == int:
-            if N_or_name > 0 and N_or_name <= len(self.channels):
-                return "Yes"
-            else:
-                return "No"
-        elif type(N_or_name) == str:
-            if N_or_name in self.channels:
-                return "Yes"
-            else:
-                return "No"
+    def is_exist(self, n):
+        if n in CHANNELS:
+            return "Yes"
+        else:
+            return "No"
+    def set_channel(self, n):
+        if n > 100 or n < 1:
+            raise ValueError("Channel not exist")
+        else:
+            self.current_channel = n - 1
+            return self.current_channel
